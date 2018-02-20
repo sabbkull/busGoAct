@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="ru.nesq1k.busgoactivity.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#fff"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:text="@string/text"
+                android:textColor="@android:color/black"
+                android:textSize="15.5dp" />
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="500dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/rounded">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:fontFamily="cursive"
+                            android:text="@string/text_ot"
+                            android:textColor="#757575"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText1"
+                            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#f2f2f2"
+                            android:ems="10"
+                            android:hint="@string/place"
+                            android:textColorHint="#757575" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rounded">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="@string/text_do"
+                            android:textColor="#757575"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#f2f2f2"
+                            android:ems="10"
+                            android:hint="@string/place"
+                            android:textColorHint="#757575" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:drawable="@drawable/sort" />
+
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/splitLineHorizontal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#d7d4d4" />
+
+                <ListView
+                    android:id="@+id/listViewBottomSheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:visibility="invisible">
+                </ListView>
+
+                <TextView
+                    android:id="@+id/nothingFoundBottomSheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Место назначения не найдено"
+                    android:textColor="#787474"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:id="@+id/splitLineHorizontal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="75dp"
+                    android:background="#d7d4d4" />
+            </RelativeLayout>
+    </LinearLayout>>
+
+</LinearLayout>

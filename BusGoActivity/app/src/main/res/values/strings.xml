@@ -1,0 +1,7 @@
+<resources>
+   <string name="app_name">BusgoActivity</string>
+   <string name="text">Назад</string>
+   <string name="place">Введите место назначения</string>
+   <string name="text_ot">от:</string>
+   <string name="text_do">до:</string>
+</resources>
